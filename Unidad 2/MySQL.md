@@ -188,4 +188,108 @@ Todas comienzan por un verbo (select, insert, update, create), a continuación l
 * DML (Data Manipulation Language)
 *  DCL (Data Control Language)
 
+# Videos
+# Tipos de Datos
+### Cadena de caracteres
+* Char (Cadena constante)
+* Varchar (Cadena variable)
+
+### Enteros 
+* TINYINT
+* SMALLINT
+* MEDIUMINT
+* INT
+* BIGINT
+### Coma flotante
+
+### Tiempos 
+* DATE
+* DATETIME
+* TIME
+* YEAR
+### Bloques
+
+### Conjuntos
+
+
+
+## DDL 
+* CREATE
+* DROP
+* ALTER
+* CREATE DATABASE
+
+**Ejemplo**:
+* CREATE TABLE ejemplo1 (campo1 VARCHAR(30) PRIMARY KEY NOT NULL, campo2 INT(3) NULL)
+
+## DML
+* INSERT
+* UPDATE
+* DELETE
+* SELECT
+
+**Ejemplo**:
+* INSERT INTO cliente VALUES(DEFAULT, 'Juan', 'Perez', 'juan@gmail')
+* UPDATE cliente SET correo = 'juan2@gmail.com' WHERE id_cliente = 1
+* DELETE FROM clientes WHERE id_cliente = 1
+* SELECT correo FROM clientes
+* SELECT nombre, apellido, correo FROM clientes WHERE id_clientes=1
+* SELECT * FROM clientes ORDER BY apellido
+
+## DCL 
+* CONNECT
+* SELET
+* UPDATE
+* INSERT
+* USAGE
+
+* GRANT (Para garantizar el acceso)
+* REVOKE (Para quitar el acceso)
+**Ejemplo**:
+
+
+# Examen 
+### 1. ¿Cuáles son los nombres y la apellido de cada uno de los usuarios?
+      SELECT nombre, apellido FROM usuarios;
+
+### 2. ¿Cuál es el apellido y el email de cada uno de los usuarios? (Tener en cuenta el nombre de los campos en la tabla)
+      SELECT apellido, correo FROM usuarios;
+
+### 3. ¿Cuál es el nombre, el apellido y la edad de todos los usuarios registrados por Facebook?
+      SELECT nombre, apellido, edad FROM usuarios WHERE registro = 'Facebook';
+
+### 4. ¿Cuáles son los usuarios (nombre y apellido) de más de 35 años?
+      SELECT nombre, apellido FROM usuarios WHERE edad > 35;
+
+### 5. ¿Cuál es el nombre y el email de las personas que se registraron a través de Facebook o Twitter?
+      SELECT nombre, correo FROM usuarios WHERE registro IN ('Facebook', 'Twitter');
+
+### 6. ¿Quiénes son los usuarios (id_us, nombre, apellido) que dejaron vacío el campo ed`
+
+SELECT id_us jj
+
+### 7. ¿Quiénes son los usuarios (todos los campos) que se registraron a través de Google y tienen más de 25 años?
+      SELECT * FROM usuarios WHERE registro = 'Google' AND edad > 25;
+
+### 8. Eliminar el usuario con id_us 8
+      DELETE FROM usuarios WHERE id_us = 8;
+
+### 9.  Agregar un usuario a la lista con los siguientes datos:
+
+* id_us = el correspondiente según el autoincremento
+
+* nombre = Tomás
+
+* apellido = Ochoa
+
+* registro = Facebook
+
+* edad = 28
+
+* correo = tomasochoa@gmail.com
+     
+      INSERT INTO usuarios (nombre, apellido, registro, edad, correo) VALUES ('Tomás', 'Ochoa', 'Facebook', 28, 'tomasochoa@gmail.com');
+
+### 10. Modificar el email del usuario con id_us 5 a alfredo.lonn@yahoo.com.ar
+     UPDATE usuarios SET correo = 'alfredo.lonn@yahoo.com.ar' WHERE id_us = 5;
 
