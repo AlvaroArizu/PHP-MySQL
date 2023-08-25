@@ -136,3 +136,39 @@ Obtendremos como resultado el cliente 4.
 
 Para profundizar más en el tema de las subconsultas les sugiero que recurran al manual de MYsql: 
 * http://dev.mysql.com/doc/refman/5.7/en/subqueries.html  
+
+
+# Examen 
+### Cuestionario:
+
+1. Listar el detalle (idFactura, idProducto, monto) de todas las compras (tabla facturas) del cliente nro. 1
+2. Listar todas las facturas de todos los clientes
+3. Listar el detalle (todos los campos de Productos y Facturas) de todas las compras de los clientes
+4. Listar los clientes que aún no hayan realizado compras (tabla Facturas) utilizando el JOIN apropiado 
+5. Clientes que no hayan hecho compras ( ídem 4 pero mediante una subconsulta)
+6. Listar la/s compras con mayor descuento realizado (subconsulta)
+7. Listar la/s compras con menor descuento realizado (subconsulta)
+8. Listar los clientes que hayan realizado compras (subconsulta)
+9. Listar el/los códigos de producto de mayor valor (tabla Productos)
+10. Eliminar todos los elementos de la tabla Productos
+
+### Respuesras 
+1. SELECT idFactura, idProducto, monto FROM facturas WHERE idCliente = 1;
+
+2. SELECT * FROM facturas;
+
+3. SELECT Productos.*, Facturas.* FROM Productos INNER JOIN Facturas ON Productos.idProducto = Facturas.idProducto;
+
+4. SELECT Clientes.* FROM Clientes LEFT JOIN Facturas ON Clientes.idCliente = Facturas.idCliente WHERE Facturas.idCliente IS NULL;
+
+5. SELECT * FROM Clientes WHERE idCliente NOT IN (SELECT DISTINCT idCliente FROM Facturas);
+
+6. SELECT *FROM Facturas WHERE descuento = (SELECT MAX(descuento) FROM Facturas);
+
+7. SELECT * FROM Facturas WHERE descuento = (SELECT MIN(descuento) FROM Facturas);
+
+8. SELECT * FROM Clientes WHERE idCliente IN (SELECT DISTINCT idCliente FROM Facturas);
+
+9. SELECT idProducto FROM Productos WHERE precio = (SELECT MAX(precio) FROM Productos);
+
+10. DELETE FROM Productos;
