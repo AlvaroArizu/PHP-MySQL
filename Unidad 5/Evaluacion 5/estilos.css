@@ -1,0 +1,130 @@
+/* Estilos generales */
+body {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    background-color: #E3E3E6;
+    margin: 0;
+}
+
+/* Contenedor principal */
+#contenedor {
+    width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFF;
+    border: 20px solid #80C141;
+    box-sizing: border-box;
+}
+
+/* Encabezado */
+header {
+    height: 290px;
+}
+
+h1 {
+    margin-left: 40px;
+    font-size: 36px;
+    color: #333;
+}
+
+/* Enlaces */
+a {
+    color: #80C141;
+    text-decoration: none;
+}
+
+/* Barra de navegación principal */
+#botonera_principal {
+    width: 940px;
+    height: 70px;
+    background-color: #FFF;
+    border-left: 20px solid #80C141;
+    margin: 0 auto;
+}
+
+#botonera_principal ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#botonera_principal ul li {
+    display: inline-block;
+}
+
+#botonera_principal ul li a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+    width: 187px;
+    height: 70px;
+    line-height: 70px;
+    border-right: 1px dotted #CCC;
+}
+
+#botonera_principal ul li a:hover {
+    background-color: #80C141;
+}
+
+/* Logotipo de la marca */
+#marca {
+    background-image: url(imagenes/fondo_marca.jpg);
+    height: 200px;
+    padding-top: 27px;
+    border-left: 20px solid #333;
+}
+
+/* Contenido principal */
+#contenido {
+    padding: 20px;
+    background-color: #FFF;
+    border-left: 20px solid #80C141;
+}
+
+/* Unidades 4 */
+#uni4_1,
+#uni4_2,
+#uni4_3,
+#uni4_4 {
+    margin: 10px;
+    padding: 10px;
+}
+
+#uni4_1 {
+    background-color: #ffffcc;
+}
+
+#uni4_2 {
+    background-color: #e6ffcc;
+}
+
+#uni4_3 {
+    background-color: #ccf2ff;
+}
+
+#uni4_4 {
+    background-color: #ffccff;
+}
+
+/* Imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Encabezados H2 */
+h2 {
+    color: #666;
+}
+
+/* Pie de página */
+footer {
+    background-color: #80C141;
+    padding: 20px;
+    border-left: 20px solid #333;
+}
+
+footer a {
+    color: #FFF;
+    font-weight: bold;
+}
