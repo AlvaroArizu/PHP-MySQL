@@ -1,0 +1,9 @@
+Para pode ver este ejemplo se debe importar la base de datos base.sql desde el phpmyadmin.
+
+
+Una vez realizado ésto, ejecutar desde http://localhost/ el archivo consulta.php quien deberá
+ mostrar todos los elementos de la base. Hay además comentadas en el código distintas
+ busquedas que pueden reemplazar a la primera para ir probando distintas opciones, solo
+ hace falta comentar el SELECT utilizado y descomentar alguno de los otros.
+ 
+ 

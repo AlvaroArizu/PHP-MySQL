@@ -1,0 +1,117 @@
+/* Establece el juego de caracteres UTF-8 */
+@charset "utf-8";
+
+/* Estilos generales del cuerpo del sitio */
+body {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    background-color: #E3E3E6;
+    margin: 0;
+    padding: 0; /* Agregado para eliminar el espacio interior por defecto */
+}
+
+/* Contenedor principal */
+#contenedor {
+    width: 960px;
+    height: auto;
+    margin: 0 auto; /* Simplificado para centrar horizontalmente */
+    background-color: #FFF;
+    border: 20px solid #80C141; /* Simplificado para usar una sola propiedad */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezado */
+header {
+    height: 290px;
+    background-image: url(imagenes/fondo_marca.jpg);
+    padding-top: 27px;
+}
+
+h1 {
+    margin-left: 40px; /* Ajuste de margen izquierdo */
+    font-size: 36px;
+    color: #333;
+}
+
+/* Vínculos generales */
+a {
+    color: #80C141;
+    text-decoration: none;
+}
+
+/* Barra de navegación principal */
+#botonera_principal {
+    width: 940px;
+    height: 70px;
+    background-color: #FFF;
+    margin: 0 auto; /* Simplificado para centrar horizontalmente */
+}
+
+#botonera_principal ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#botonera_principal ul li {
+    display: inline;
+    margin-right: 5px; /* Espacio entre elementos */
+}
+
+#botonera_principal ul li a {
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+    border-right: 1px dotted #CCC;
+    width: 187px;
+    height: 70px;
+    line-height: 70px;
+    transition: background-color 0.3s, color 0.3s; /* Agregado para transiciones suaves */
+}
+
+#botonera_principal ul li a:hover {
+    background-color: #80C141;
+    color: #FFF;
+}
+
+/* Marca o logotipo */
+#marca {
+    height: 200px;
+    padding-top: 27px;
+    border-left: solid 20px #333;
+    background-color: #FFF;
+    background-image: url(imagenes/fondo_marca.jpg);
+}
+
+/* Contenido principal */
+#contenido {
+    padding: 20px;
+    background-color: #FFF;
+    border-left: 20px solid #80C141;
+}
+
+/* Clases específicas para la unidad 4 */
+.ajustar {
+    width: 100%;
+}
+
+/* Encabezado secundario (puedes agregar más estilos según tus necesidades) */
+h2 {
+    color: #666;
+}
+
+/* Pie de página */
+footer {
+    background-color: #80C141;
+    padding: 20px;
+    border-left: 20px solid #333;
+    text-align: center; /* Alineación de texto al centro */
+}
+
+footer a {
+    color: #FFF;
+    font-weight: bold;
+    text-decoration: none; /* Eliminado subrayado de enlaces en el pie de página */
+}
+
+/* Agregar más estilos específicos según tus necesidades */
