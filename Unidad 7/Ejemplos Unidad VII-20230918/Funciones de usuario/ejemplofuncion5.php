@@ -6,14 +6,14 @@
 </head>
 
 <body><?php
-function agregar($string) {// Paso por valor del parámetro. 
-$string .= ' y algo más.';
+function agregar($string) {// Paso por valor del parï¿½metro. 
+$string .= ' y algo mï¿½s.';
 }
 $str = 'Esto es una cadena, ';
 agregar($str);
 echo $str."<br/>"; // Escribe 'Esto es una cadena, '
-agregar(&$str);
-echo($str);// Escribe 'Esto es una cadena, y algo más.'
+//agregar(&$str);
+echo($str);// Escribe 'Esto es una cadena, y algo mï¿½s.'
 ?>
 </body>
 </html>
